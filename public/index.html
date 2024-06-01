@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mentorship Platform</h1>
+  </header>
+  <main>
+    <section id="create-profile">
+      <h2>Create a New Profile</h2>
+      <form id="profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="profile_description">Profile Description:</label>
+        <textarea id="profile_description" name="profile_description" required></textarea><br>
+        <button type="submit">Create Profile</button>
+      </form>
+    </section>
+
+    <section id="upload-details" style="display: none;">
+      <h2>Upload Additional Details</h2>
+      <form id="details-form">
+        <label for="additional_details">Additional Details (Text):</label>
+        <textarea id="additional_details" name="additional_details" required></textarea><br>
+        <label for="video">Upload Video or YouTube Link:</label>
+        <input type="text" id="video" name="video" placeholder="Paste video link or upload video file"><br>
+        <button type="submit">Upload Details</button>
+      </form>
+    </section>
+
+    <section id="view-details" style="display: none;">
+      <h2>All Uploaded Details</h2>
+      <div id="details-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
